@@ -6,9 +6,9 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const head = function (array) {
-  if (!array || array.length === 0) return;
-  return array[0]
+const head = function (arr) {
+  if (!arr || arr.length === 0) return;
+  return arr[0]
 };
 
 assertEqual(head([5,6,7]), 5);
