@@ -1,4 +1,3 @@
-// FUNCTION IMPLEMENTATION
 const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(" ✅✅✅ Assertion Passed: [actual] === [expected]")
@@ -7,11 +6,11 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-// 🛑🛑🛑 Assertion Failed: "Lighthouse Labs" !== "Bootcamp"
-// ✅✅✅ Assertion Passed: 1 === 1
-
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);``
-
-module.exports = assertEqual;
+const findKeyByValue = function (object, value) {
+  // let type = [keys].value
+  for (const key of Object.keys(object)) {
+    if (value == object[key]) {
+      return key
+    }
+  }
+}
